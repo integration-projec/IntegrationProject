@@ -1,0 +1,9 @@
+{ % extends 'layout.html' %}
+
+{% block content %}
+
+{% for post in posts%}
+<h2>{{ post[0] }} <em>by {{post[1]}}</em></h2>
+{% endfor %}
+
+{% endblock %}
